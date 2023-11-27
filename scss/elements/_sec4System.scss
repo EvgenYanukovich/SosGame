@@ -1,0 +1,86 @@
+.screen4 {
+    background-image: url($urlImgScreen4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    @include flex($direction: column, $justify: space-evenly) {
+        padding-bottom: (2500%/960);
+    }
+
+    h2 {
+        @include font($name: BebasNeue, $size: 80px, $width: 700) {
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+    }
+
+    h3 {
+        @include font($name: BebasNeue, $size: 24px, $width: 700) {
+            letter-spacing: 2px;
+        }
+    }
+
+    h5 {
+        @include font($color: #FFB548, $name: BebasNeue, $size: 24px, $width: 700) {
+            letter-spacing: 2px;
+        }
+    }
+
+    p {
+        @include font() {
+            line-height: 22px;
+        }
+    }
+
+    .head {
+        @include flex($direction: column);
+    }
+
+    .requirements {
+        padding-right: 50%;
+
+        display: grid;
+        grid-template-columns: (28500vw/1440) (28500vw/1440);
+        grid-template-rows: (12500vh/960) (12500vh/960) (15000vh/960);
+        grid-template-areas:
+            'o p'
+            'm s'
+            'g g';
+
+        .requirement {
+            border-style: solid;
+            border-color: #989898;
+            border-width: 1px;
+
+            padding-left: 18px;
+            padding-top: 15px;
+            
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .requirement:nth-child(1) {
+            grid-area: o;
+        }
+
+        .requirement:nth-child(2) {
+            grid-area: p;
+        }
+
+        .requirement:nth-child(3) {
+            grid-area: m;
+        }
+
+        .requirement:nth-child(4) {
+            grid-area: s;
+        }
+
+        .requirement:nth-child(5) {
+            grid-area: g;
+        }
+    }
+}

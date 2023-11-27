@@ -1,0 +1,69 @@
+.screen3 {
+  background-image: url($urlImgScreen3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: (87200vh/960);
+  min-width: 100vw;
+  @include flex($justify: center);
+}
+
+.container {
+  margin-left: 40vw;
+  width: (41000%/1440);
+
+  .head {
+    h3 {
+      @include font($name: BebasNeue, $size: 24px, $width: 700) {
+        letter-spacing: 2px;
+      }
+    }
+
+    h2 {
+      @include font($name: BebasNeue, $size: 80px, $width: 700) {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .accordion {
+    padding-left: 45px;
+
+    p {
+      @include font() {
+        text-align: justify;
+      }
+    }
+
+    label>p {
+      @include font($color: #FFB548, $name: Bebas Neue, $size: 36px, $width: 700) {
+        letter-spacing: 2px;
+      }
+    }
+
+    margin-top: -10px;
+    margin-bottom: 70px;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    position: fixed;
+    top: -100vh;
+    left: -100vh;
+
+    &~p {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+
+    &:checked~p {
+      max-height: 200px;
+    }
+  }
+
+  article {
+    margin-top: 30px;
+  }
+}

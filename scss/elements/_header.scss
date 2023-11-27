@@ -1,0 +1,110 @@
+body {
+    width: 100vw;
+    background: #000;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    padding-right: (120*100vw/1440);
+    padding-left: (120*100vw/1440);
+    @include flex ();
+    z-index: 1000;
+
+    nav {
+        width: 42.5%;
+
+        ul {
+            @include flex ();
+        }
+
+        a {
+            @include font ($size: 12px, $width: 700) {
+                letter-spacing: 1.2px;
+            }
+
+            padding-bottom: 5px;
+
+            &:hover {
+                border-bottom: 3px solid #ffb548;
+                transition: 0.1s all
+            }
+        }
+    }
+
+    .inner-link {
+        width: 11.65%;
+
+        @include flex ();
+
+        .language {
+            position: relative;
+
+
+            @include font ($size: 12px, $width: 700) {
+                letter-spacing: 1.2px;
+            }
+
+            .lang-list:not(.active) a:hover {
+                color: #FFB548;
+            }
+
+            .active {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                img {
+                    transition: transform 0.5s ease-in-out;
+                }
+            }
+
+            .active,
+            li {
+                margin: 6.5px;
+                margin-right: 20px;
+            }
+
+            .lang-list {
+                position: absolute;
+                display: none;
+                border-radius: 3px;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                .lang-list {
+                    display: block;
+                    margin-top: 11px;
+                    background-color: opacify($color: #000000, $amount: 0.75);
+                }
+
+                img {
+                    transform: rotate(180deg);
+                }
+
+            }
+
+        }
+
+        .item-links {
+            @include flex() {
+                gap: 10px;
+            }
+        }
+
+        .burger-btn {
+            display: none;
+        }
+    }
+}
+
+@media (width < 1200px) {
+    nav {
+        display: none;
+    }
+}

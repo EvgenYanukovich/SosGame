@@ -1,0 +1,71 @@
+.screen1 {
+    background-image: url($urlImgScreen1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .screen1-information {
+        width: 100%;
+        height: 80vh;
+        @include flex ($direction: column, $justify: center);
+        text-align: center;
+
+        h1 {
+            @include font($name: "BebasNeue", $size: 80px) {
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
+
+        h3 {
+            @include font($name: "BebasNeue", $size: 24px) {
+                letter-spacing: 2px;
+            }
+
+            margin-top: -15px;
+            margin-bottom: 28px;
+        }
+
+        button {
+            @include font ($color: #000, $size: 16px, $width: 700);
+
+            background-color: #FFB548;
+            padding: 18px;
+            border-radius: 4px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #FFA234;
+                transform: scale(1.05);
+            }
+
+            &:active {
+                background-color: #FF8F20;
+                transform: scale(0.95);
+            }
+        }
+
+    }
+
+    .screen1-navigation {
+        @include flex ($direction: column, $justify: center);
+
+        @include font ($size: 12px, $width: 700) {
+            line-height: 22px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+    }
+
+    .screen1-slider {
+        display: none;
+    }
+}

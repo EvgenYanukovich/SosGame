@@ -1,0 +1,17 @@
+@mixin font ($color:#fff, $name: OpenSans, $size: 18px, $width: 400px) {
+    color: $color;
+    font-family: $name;
+    font-size: $size;
+    font-weight: $width;
+
+    @content
+};
+
+@mixin flex ($justify: space-between, $align: center, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+    @content
+}

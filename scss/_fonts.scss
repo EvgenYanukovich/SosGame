@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Icons;
+  font-display: swap;
+  src: url($urlFontIcons) format("woff"), url($urlFontIcons2) format("woff2");
+}
+
+@font-face {
+  font-family: BebasNeue;
+  font-display: swap;
+  src: url($urlFontBebas) format("woff"), url($urlFontBebas2) format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url($urlFontOpen) format("woff"), url($urlFontOpen) format("woff2");
+}

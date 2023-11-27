@@ -1,0 +1,121 @@
+.screen2 {
+    background-image: url($urlImgScreen2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: (105000vh/960);
+    min-width: 100vw;
+
+    @include flex($justify: center);
+    gap: 100px
+
+}
+
+.screen2-information {
+    margin-left: 40px;
+    @include flex($direction: column, $justify: space-evently);
+
+    h2 {
+        @include font($name: "BebasNeue", $size: 80px) {
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+    }
+
+    h3 {
+        @include font($name: "BebasNeue", $size: 24px) {
+            letter-spacing: 2px;
+        }
+
+        margin-top: -15px;
+        margin-bottom: 28px;
+    }
+
+    p {
+        width: (36500vw/1440);
+        margin-left: 70px;
+        margin-top: 50px;
+        @include font() {
+            text-align: justify;
+            line-height: 22px;
+        }
+    }
+
+    .p-decoration {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .p-decoration::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #FFB548;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.5s ease;
+    }
+
+    .p-decoration:hover::after {
+        transform: scaleX(1);
+        animation: underline 2s ease;
+    }
+
+    @keyframes underline {
+        0% {
+            transform: scaleX(0);
+        }
+
+        100% {
+            transform: scaleX(1);
+        }
+    }
+
+
+    .head {
+        align-self: start;
+
+        hr {
+            border: none;
+            border-top: 3px solid #fff;
+            width: 130%;
+        }
+    }
+}
+
+.screen2-slider {
+    display: flex;
+    justify-content: space-between;
+    width: (60000%/1440);
+
+    .photo {
+        position: relative;
+        width: (5000%/60);
+        display: flex;
+        align-items: center;
+
+        .slide {
+            position: absolute;
+            transition: all 0.5s ease;
+        }
+
+        .s1 {
+            width: 90%;
+            z-index: 200;
+        }
+
+        .s2 {
+            width: 80%;
+            z-index: 100;
+            left: 15%;
+        }
+
+        .s3 {
+            width: 70%;
+            z-index: 0;
+            left: 30%;
+        }
+    }
+}

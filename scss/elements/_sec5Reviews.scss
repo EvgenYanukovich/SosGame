@@ -1,0 +1,131 @@
+.screen5 {
+    background-image: url($urlImgScreen5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    @include flex($justify: space-evenly);
+
+    .screen5-information {
+        @include flex($direction: column, $justify: space-between, $align: start);
+        width: (41100%/1440);
+        height: (38700vh/960);
+
+        h3 {
+            @include font($name: BebasNeue, $size: 24px, $width: 700) {
+                letter-spacing: 2px;
+            }
+        }
+
+        h2 {
+            @include font($name: BebasNeue, $size: 80px, $width: 700) {
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            @include font() {
+                line-height: 22px;
+            }
+        }
+
+        button {
+            @include font ($color: #1A1917, $size: 16px, $width: 700);
+
+            width: 62%;
+            background-color: #FFB548;
+            padding: 18px;
+            border-radius: 4px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #FFA234;
+                transform: scale(1.05);
+            }
+
+            &:active {
+                background-color: #FF8F20;
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    .screen5-comments {
+        width: (60000%/1440);
+        height: 100vh;
+        @include flex($direction: column, $justify: center) {
+            gap: (3000%/960);
+        }
+
+        .comment {
+            padding-top: 15px;
+            padding-bottom: 20px;
+            width: (45800vw/1440);
+            height: (18000vh/960);
+            border-radius: 10px;
+            background-color: #141414;
+
+            @include flex($direction: column, $align: start);
+
+            .comment-text,
+            .date {
+                width: (39000%/458);
+                padding-left: (1600%/458);
+                @include font();
+            }
+
+            .date {
+                opacity: 0.5;
+                font-size: 14px;
+            }
+
+            .user {
+                width: (100%-1750/458);
+                align-self: center;
+                @include flex();
+
+                .user-info {
+                    width: (32500%/415);
+
+                    @include flex() {
+                        flex-wrap: wrap;
+                    }
+
+                    p {
+                        width: 60%;
+                    }
+
+                    .name {
+                        @include font($color: #FFB548, $name: BebasNeue, $size: 24px, $width: 700px) {
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    .work {
+                        @include font() {
+                            line-height: 22px;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .comment:nth-child(1) {
+            align-self: end;
+        }
+
+        .comment:nth-child(2) {
+            align-self: start;
+        }
+
+        .comment:nth-child(1) {
+            align-self: center;
+            margin-left: (6500%/600);
+        }
+    }
+}
