@@ -28,7 +28,6 @@
   }
 
   .accordion {
-    padding-left: 45px;
 
     p {
       @include font() {
@@ -36,7 +35,7 @@
       }
     }
 
-    label h3 {
+    label {
       @include font($color: #FFB548, $name: Bebas Neue, $size: 36px, $width: 700) {
         letter-spacing: 2px;
       }

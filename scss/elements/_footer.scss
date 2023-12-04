@@ -12,150 +12,152 @@ footer {
         margin-top: 40px;
         margin-bottom: 22px;
     }
-}
 
-.footer-form {
-    margin-top: 2%;
-    @include flex() {
-        padding-left: (16000vw/1440);
-        padding-right: (12000vw/1440);
-    }
 
-    .information {
-        width: (65000%/(1440-160-120));
+    .footer-form {
+        margin-top: 2%;
 
-        @include flex($direction: column, $justify: center, $align: start) {
-            gap: 25px;
-        }
-    }
-
-    h3 {
-        @include font($name: BebasNeue, $size: 24px, $width: 700) {
-            letter-spacing: 2px;
-        }
-    }
-
-    h2 {
-        @include font($name: BebasNeue, $size: 80px, $width: 700) {
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-    }
-
-    p {
-        @include font() {
-            line-height: 22px;
-        }
-    }
-
-    .form {
-        margin-top: 25px;
-        width: 100%;
-        @include flex();
-    }
-
-    .email {
-        padding-left: 15px;
-        width: (36700%/642);
-        height: 60px;
-        border-radius: 5px;
-        border-style: none;
-        background-color: #141414;
-        color: #808080;
-    }
-
-    input[type="submit"] {
-        @include font ($color: #1A1917, $size: 16px, $width: 700);
-
-        background-color: #FFB548;
-        width: (26000%/642);
-        padding: 18px;
-        border-radius: 4px;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            background-color: #FFA234;
-            transform: scale(1.05);
+        @include flex() {
+            padding-left: (16000vw/1440);
+            padding-right: (12000vw/1440);
         }
 
-        &:active {
-            background-color: #FF8F20;
-            transform: scale(0.95);
+        .information {
+            width: (65000%/(1440-160-120));
+
+            @include flex($direction: column, $justify: center, $align: start) {
+                gap: 25px;
+            }
         }
-    }
-}
 
-.footer-up {
-    margin-top: -1%;
-    height: 10vh;
-    width: 100%;
-    padding-right: (12000vw/1440);
-    padding-left: (12000vw/1440);
-    @include flex ($align: end);
+        h3 {
+            @include font($name: BebasNeue, $size: 24px, $width: 700) {
+                letter-spacing: 2px;
+            }
+        }
 
-    .logotype {
-        width: 90px;
-        height: 90px;
-    }
+        h2 {
+            @include font($name: BebasNeue, $size: 80px, $width: 700) {
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
 
-    nav {
-        width: (94200vw/1440);
+        p {
+            @include font() {
+                line-height: 22px;
+            }
+        }
 
-        ul {
+        .form {
+            margin-top: 25px;
             width: 100%;
             @include flex();
         }
 
-        .nav-elem {
-            @include font ($size: 12px, $width: 700) {
-                letter-spacing: 1.2px;
-            }
+        .email {
+            padding-left: 15px;
+            width: (36700%/642);
+            height: 60px;
+            border-radius: 5px;
+            border-style: none;
+            background-color: #141414;
+            color: #808080;
+        }
 
-            padding-bottom: 5px;
+        input[type="submit"] {
+            @include font ($color: #1A1917, $size: 16px, $width: 700);
+
+            background-color: #FFB548;
+            width: (26000%/642);
+            padding: 18px;
+            border-radius: 4px;
+            transition: all 0.3s ease-in-out;
 
             &:hover {
-                border-bottom: 3px solid #ffb548;
-                transition: 0.1s all
+                background-color: #FFA234;
+                transform: scale(1.05);
+            }
+
+            &:active {
+                background-color: #FF8F20;
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    .footer-up {
+        margin-top: -1%;
+        height: 10vh;
+        width: 100%;
+        padding-right: (12000vw/1440);
+        padding-left: (12000vw/1440);
+        @include flex ($align: end);
+
+        .logotype {
+            width: 90px;
+            height: 90px;
+        }
+
+        nav {
+            width: (94200vw/1440);
+
+            ul {
+                width: 100%;
+                @include flex();
+            }
+
+            .nav-elem {
+                @include font ($size: 12px, $width: 700) {
+                    letter-spacing: 1.2px;
+                }
+
+                padding-bottom: 5px;
+
+                &:hover {
+                    border-bottom: 3px solid #ffb548;
+                    transition: 0.1s all
+                }
+            }
+
+            img[alt="faceboock"]:hover {
+                content: url('../img/footer/facebook_hover.svg');
+            }
+
+            img[alt="twitter"]:hover {
+                content: url('../img/footer/twitter_hover.svg');
+            }
+
+            img[alt="youtube"]:hover {
+                content: url('../img/footer/youtube_hover.svg');
+            }
+
+            img[alt="twitch"]:hover {
+                content: url('../img/footer/twitch_hover.svg');
+            }
+
+        }
+    }
+
+    .footer-down {
+        width: 100%;
+        padding-right: (12000vw/1440);
+        padding-left: (12000vw/1440);
+        margin-bottom: 47px;
+
+        @include flex();
+
+        p {
+            @include font($size: 14px, $width: 400);
+            opacity: 0.5;
+        }
+
+        a {
+            @include font($size: 12px, $width: 700) {
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
             }
         }
 
-        img[alt="faceboock"]:hover {
-            content: url('../img/footer/facebook_hover.svg');
-        }
-
-        img[alt="twitter"]:hover {
-            content: url('../img/footer/twitter_hover.svg');
-        }
-
-        img[alt="youtube"]:hover {
-            content: url('../img/footer/youtube_hover.svg');
-        }
-
-        img[alt="twitch"]:hover {
-            content: url('../img/footer/twitch_hover.svg');
-        }
-
     }
-}
-
-.footer-down {
-    width: 100%;
-    padding-right: (12000vw/1440);
-    padding-left: (12000vw/1440);
-    margin-bottom: 47px;
-
-    @include flex();
-
-    p {
-        @include font($size: 14px, $width: 400);
-        opacity: 0.5;
-    }
-
-    a {
-        @include font($size: 12px, $width: 700) {
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-        }
-    }
-
 }
