@@ -34,6 +34,7 @@
         }
 
         button {
+            width: 18vw;
             @include font ($color: #000, $size: 16px, $width: 700);
 
             background-color: #FFB548;

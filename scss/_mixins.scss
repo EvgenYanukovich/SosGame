@@ -1,4 +1,4 @@
-@mixin font ($color:#fff, $name: OpenSans, $size: 18px, $width: 400px) {
+@mixin font ($color:#fff, $name: OpenSans, $size: 18px, $width: 400) {
     color: $color;
     font-family: $name;
     font-size: $size;

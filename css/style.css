@@ -256,7 +256,7 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: "BebasNeue";
   font-size: 80px;
-  font-weight: 400px;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -264,12 +264,13 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: "BebasNeue";
   font-size: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   letter-spacing: 2px;
   margin-top: -15px;
   margin-bottom: 28px;
 }
 .screen1 .screen1-information button {
+  width: 18vw;
   color: #000;
   font-family: OpenSans;
   font-size: 16px;
@@ -348,9 +349,9 @@ header .inner-link .burger-btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evently;
-      -ms-flex-pack: space-evently;
-          justify-content: space-evently;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -359,7 +360,7 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: "BebasNeue";
   font-size: 80px;
-  font-weight: 400px;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -367,19 +368,19 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: "BebasNeue";
   font-size: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   letter-spacing: 2px;
   margin-top: -15px;
   margin-bottom: 28px;
 }
 .screen2-information p {
   width: 25.3472222222vw;
-  margin-left: 70px;
+  margin-left: 85px;
   margin-top: 50px;
   color: #fff;
   font-family: OpenSans;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   text-align: justify;
   line-height: 22px;
 }
@@ -441,6 +442,7 @@ header .inner-link .burger-btn {
 }
 
 .screen2-slider {
+  margin-left: -3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,10 +531,10 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: OpenSans;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   text-align: justify;
 }
-.container .accordion label > p {
+.container .accordion label h3 {
   color: #FFB548;
   font-family: Bebas Neue;
   font-size: 36px;
@@ -608,7 +610,7 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: OpenSans;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 22px;
 }
 .screen4 .head {
@@ -735,7 +737,7 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: OpenSans;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 22px;
 }
 .screen5 .screen5-information button {
@@ -806,7 +808,7 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: OpenSans;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 .screen5 .screen5-comments .comment .date {
   opacity: 0.5;
@@ -863,7 +865,7 @@ header .inner-link .burger-btn {
   color: #fff;
   font-family: OpenSans;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 22px;
   opacity: 0.5;
 }
@@ -899,7 +901,7 @@ footer {
 }
 footer hr {
   height: 1px;
-  width: 1200px;
+  width: 100%;
   background: #808080;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -962,7 +964,7 @@ footer hr {
   color: #fff;
   font-family: OpenSans;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 22px;
 }
 .footer-form .form {

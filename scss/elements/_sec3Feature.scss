@@ -36,7 +36,7 @@
       }
     }
 
-    label>p {
+    label h3 {
       @include font($color: #FFB548, $name: Bebas Neue, $size: 36px, $width: 700) {
         letter-spacing: 2px;
       }
