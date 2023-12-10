@@ -413,8 +413,8 @@ header .inner-link .burger-btn {
   width: 100%;
   height: 2px;
   background-color: #FFB548;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -1254,10 +1254,10 @@ footer .footer-down a {
     width: 70vw;
     margin-top: 15vh;
     margin-bottom: 15vh;
+    margin-left: 0;
   }
   .screen2 .screen2-slider .photo {
-    height: 80%;
-    width: 83.3333333333%;
+    width: 66.6666666667%;
   }
   .screen3 .container {
     margin: 0;
