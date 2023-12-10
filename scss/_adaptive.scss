@@ -137,6 +137,8 @@
 
     .screen3 {
         .container {
+            @include flex($direction: column, $justify: space-between, $align: center);
+
             margin: 0;
             width: 70vw;
 
@@ -153,12 +155,20 @@
             }
 
             .accordion {
+
+                article {
+                   
+                    max-width: 70vw;
+                    min-width: auto;
+                }
+
                 label {
                     font-size: 21px;
                     letter-spacing: 2px;
                 }
 
                 p {
+                    width: 100%;
                     text-align: justify;
                     font-size: 14px;
                     line-height: 16px;

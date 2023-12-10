@@ -234,7 +234,7 @@ header .inner-link .burger-btn {
   }
 }
 .screen1 {
-  background-image: url("../img/background/bg_main.jpg");
+  background-image: url("../img/background/bg_main.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,7 +337,7 @@ header .inner-link .burger-btn {
 }
 
 .screen2 {
-  background-image: url("../img/background/bg_battle.jpg");
+  background-image: url("../img/background/bg_battle.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1260,6 +1260,19 @@ footer .footer-down a {
     width: 66.6666666667%;
   }
   .screen3 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     width: 70vw;
   }
@@ -1271,11 +1284,16 @@ footer .footer-down a {
     font-size: clamp(18px, 2vh, 22px);
     margin-bottom: 0;
   }
+  .screen3 .container .accordion article {
+    max-width: 70vw;
+    min-width: auto;
+  }
   .screen3 .container .accordion label {
     font-size: 21px;
     letter-spacing: 2px;
   }
   .screen3 .container .accordion p {
+    width: 100%;
     text-align: justify;
     font-size: 14px;
     line-height: 16px;
