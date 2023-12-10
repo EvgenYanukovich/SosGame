@@ -11,7 +11,7 @@
     .screen5-information {
         @include flex($direction: column, $justify: space-between, $align: start);
         width: (41100%/1440);
-        height: (38700vh/960);
+        height: (60000vh/960);
 
         h3 {
             @include font($name: BebasNeue, $size: 24px, $width: 700) {
@@ -35,6 +35,7 @@
         button {
             @include font ($color: #1A1917, $size: 16px, $width: 700);
 
+            margin-top: 5vh;
             width: 62%;
             background-color: #FFB548;
             padding: 18px;
@@ -55,10 +56,9 @@
 
     .screen5-comments {
         width: (60000%/1440);
-        height: 100vh;
-        @include flex($direction: column, $justify: center) {
-            gap: (3000%/960);
-        }
+        height: (60000vh/960);
+
+        @include flex($direction: column, $justify: space-between);
 
         .comment {
             padding-top: 15px;
